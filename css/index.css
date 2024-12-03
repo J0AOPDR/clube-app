@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.header .icon-clube{
+    height: 90%;
+    width: 4%;
+    margin-left: 1.0%;
+    border-radius: 100%;
+    margin-top: 0%;
+    background-color: #D9D9D9;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.left-cont{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-cont .left-cont-painel{
+    background-color: #D9D9D9;
+    height: 99%;
+    width: 90%;
+    border-radius: 25px;
+    margin-left: 1%;
+}
+.mid-cont{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    
+}
+.mid-cont form{
+    display: flex;
+    height: 60%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+.mid-cont-form{
+    height: 99%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+.mid-cont .inp-form{
+    outline: none;
+    border: none;
+    height: 9%;
+    width: 60%;
+    padding-left: 20px;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+.mid-cont input[type="submit"]{
+    outline: none;
+    border: none;
+    width: 60%;
+    margin-top: 2%;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 9%;
+    font-family: poppins, sans-serif;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 19px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 19px -11px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 19px -11px rgba(0,0,0,0.75);
+}
+.right-cont{
+    height: 100%;
+    width: 63%;
+    
+}
+form p{
+    font-size: 40px;
+    font-family: jaro,sans-serif;
+}
+form a{
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-left: 30%;
+    color: black;
+    font-family: poppins,sans-serif;
+}

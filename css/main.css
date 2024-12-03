@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.header .icon-clube{
+    height: 90%;
+    width: 4%;
+    margin-left: 1.0%;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.left-cont{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-cont .left-cont-painel{
+    background-color: #D9D9D9;
+    height: 99%;
+    width: 90%;
+    border-radius: 25px;
+    margin-left: 1%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.painel-mod{
+    height: 8%;
+    width: 82%;
+    border-radius: 100%;
+    margin-left: 1%;
+    margin-top: 20%;
+}
+.painel-mod img{
+    height: 80%;
+    width: 80%;
+    
+}
+.painel-mod button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+.right-cont{
+    height: 99%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 92%;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+}
