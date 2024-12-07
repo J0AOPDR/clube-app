@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="/clube-app-main/css/index.css">
 </head>
 <body>
     <div class="header">
@@ -20,7 +20,7 @@
         </div>
         <div class="mid-cont">
             <div class="mid-cont-form">
-            <form action="login.php" method="POST">
+            <form action="/clube-app-main/controller/admin/login.php" method="POST">
                 <p>Bem vindo!</p>
                 <input type="email" name="email" class="inp-form" placeholder="Email">
                 <input type="password" name="senha" class="inp-form" placeholder="Senha">

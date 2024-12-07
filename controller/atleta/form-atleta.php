@@ -20,12 +20,12 @@
         </div>
         <div class="mid-cont">
             <div class="mid-cont-form">
-            <form action="login.php" method="POST">
+            <form action="login-atleta.php" method="POST">
                 <p>Bem vindo!</p>
                 <input type="email" name="email-atleta" class="inp-form" placeholder="Email">
                 <input type="password" name="senha-atleta" class="inp-form" placeholder="Senha">
                 <input type="submit" name="submit" value="Acessar Conta">
-                <a href="clube-app/controller/main.php">Entrar</a>
+                <a href="clube/controller/main.php">Entrar</a>
             </form>
             </div>
         </div>

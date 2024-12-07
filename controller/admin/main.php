@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
 
@@ -29,7 +29,10 @@
                     <button><img src="https://cdn-icons-png.flaticon.com/512/77/77305.png" alt=""></button>
                 </div>
                 <div class="painel-mod">
-                    <a href="test.php">gay</a>
+                    <a href="../test.php">funciona!</a>
+                </div>
+                <div class="painel-mod">
+                    <a href="../cadastro-atleta.php">funciona!</a>
                 </div>
                 <div class="painel-mod">
                 </div>
