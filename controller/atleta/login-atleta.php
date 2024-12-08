@@ -16,6 +16,8 @@
             $_SESSION['senha-atlteta'] = $senha;
             header('Location: main-atleta.php');
         }
+    }else{
+        header("Location: form-atleta.php");
     }
 
 ?>

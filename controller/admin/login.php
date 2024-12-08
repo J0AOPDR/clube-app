@@ -1,7 +1,7 @@
 <?php 
     session_start();
     if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['senha'])){
-        include('../conn.php');
+        include('../../controller/conn.php');
         $email = isset($_POST['email']) ? $_POST['email'] : false;
         $senha = isset($_POST['senha']) ? $_POST['senha'] : false;
 
@@ -16,6 +16,8 @@
             $_SESSION['senha'] = $senha;
             header('Location: main.php');
         }
+    }else{
+        header("Location: form.php");
     }
 
 ?>

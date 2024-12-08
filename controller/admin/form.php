@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/clube-app-main/css/index.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
-    <div class="header">
-        <div class="icon-clube">
+    <div class="left-box">
+        <p></p>
 
-        </div>
     </div>
-    <div class="cont">
-        <div class="left-cont">
-            <div class="left-cont-painel">
-                
-            </div>
-        </div>
-        <div class="mid-cont">
-            <div class="mid-cont-form">
-            <form action="/clube-app-main/controller/admin/login.php" method="POST">
-                <p>Bem vindo!</p>
-                <input type="email" name="email" class="inp-form" placeholder="Email">
-                <input type="password" name="senha" class="inp-form" placeholder="Senha">
-                <input type="submit" name="submit" value="Acessar Conta">
-                <a href="../mail/mail.php">Esqueceu a Senha?</a>
-                <a href="../controller/form-atleta.php">Entrar</a>
+    <div class="right-box">
+        <div class="form-box">
+            <form action="../admin/login.php" method="POST">
+                <div class="form-box-title">
+                    <p>Acessar conta</p>
+                    <div class="box-form-img">
+                        <div class="form-img">
+                        <img src="../../css/img/admin.png" alt="">
+                        </div>
+                    <div class="form-img">
+                        <img src="../../css/img/atleta.png" alt="">
+                    </div>
+                    </div>
+                </div>
+                    <input type="email" name="email" class="inp-form" placeholder="Endereço de Email">
+                    <input type="password" name="senha" class="inp-form" placeholder="Senha" >
+                <input type="submit" name="submit" value="Logar">
             </form>
-            </div>
-        </div>
-        <div class="right-cont">
-
         </div>
     </div>
 </body>
