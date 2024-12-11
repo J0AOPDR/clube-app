@@ -47,10 +47,10 @@
                 <h1>Equipe</h1>
             </div>
             <div class="box-add">
-            <form action="../../../">
+            <form action="../../../controller/admin/funcAdmin/add.php" method="POST">
                     <input type="text" name="nome" class="inp-form" placeholder="Nome" >
-                    <input type="text" name="nome" class="inp-form" placeholder="Sobrenome" >
-                    <input type="text" name="nome" class="inp-form" placeholder="Avaliação" >
+                    <input type="text" name="sobrenome" class="inp-form" placeholder="Sobrenome" >
+                    <input type="text" name="avaliacao" class="inp-form" placeholder="Avaliação" >
                     <input type="email" name="email" class="inp-form" placeholder="Endereço de Email">
                     <input type="password" name="senha" class="inp-form" placeholder="Senha" >
 
@@ -58,7 +58,7 @@
             </form>
             </div>
             <div class="box-excel">
-            <form method="post" action="../../../controller/processa.php" enctype="multipart/form-data">
+            <form method="post" action="../../../controller/admin/funcAdmin/processaExcel.php" enctype="multipart/form-data">
                 <input type="file" name="arquivo" id="file-input" title="">
                 <label id = "file-input-label" for="file-input">Excel</label>
                 <input type="submit" value="Enviar">

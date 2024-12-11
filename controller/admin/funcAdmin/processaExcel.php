@@ -1,5 +1,5 @@
 <?php 
-    include('conn.php');
+    include('../../conn.php');
     $arquivo = $_FILES['arquivo'];
 
     $primeira_linha = true;
@@ -43,8 +43,7 @@
                 continue;
             }
         
-            $query_atleta = "INSERT INTO clube_atleta (nome, sobrenome, avaliacao, email, senha) 
-                             VALUES (?, ?, ?, ?, ?)";
+            $query_atleta = "INSERT INTO clube_atleta (nome, sobrenome, avaliacao, email, senha) VALUES (?, ?, ?, ?, ?)";
             $cad_atleta = $conn->prepare($query_atleta);
             $cad_atleta->bind_param("sssss", $nome, $sobrenome, $avaliacao, $email, $senha);
         
