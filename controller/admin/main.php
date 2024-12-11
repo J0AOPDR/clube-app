@@ -48,7 +48,7 @@
             </div>
             <div class="btn-box-atletas">      
                 <p>Adicione mais membros à equipe para um desenvolvimento ainda melhor das habilidades do time. Juntos somos mais fortes!</p>
-                <a href="form.php">
+                <a href="funcAdmin/addAtleta.php">
                 <button><img src="../../css/img/addBtn.png" alt="">Adicionar</button>
                 </a>
             </div>

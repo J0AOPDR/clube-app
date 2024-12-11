@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: row;
+}
+.left-box{
+    background-color: #3C56FF;
+    width: 5%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-box-painel{
+    background-color: white;
+    width: 80%;
+    height: 98vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.left-box-inicio{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.painel-line{
+    background-color: black;
+    width:80%;
+    border-radius: 100px;
+    height: 7px;
+}
+.left-box-inicio img{
+    width: 50%;
+    height: 50%;
+}
+.left-box-img img{
+    width: 50%;
+    height: 50%;
+}
+.left-box-img{
+    background-color: black;
+    width: 50px;
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img-btn{
+    border: none;
+    background-color: transparent;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.mid-box{
+    background-color: #3C56FF;
+    width: 65%;
+    height: 100vh;
+    padding-left: 1%;
+}
+.mid-box-atletas{
+    background-color: rgb(255, 255, 255);
+    height: 97.8%;
+    width: 90%;
+    margin-top: 0.8%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.box-title{
+    height: 10%;
+    width: 100%;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+} 
+.box-add{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-add .inp-form {
+    width: 50%;
+    height: 8%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 4px solid #CFCFCF;
+    outline: none;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+    padding-bottom: 10px;
+    background-color: white; /* Garantir fundo branco nos campos de input */
+    margin-top: 10px;
+}
+.box-add form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-add input[type="submit"] {
+    width: 50%;
+    height: 15%;
+    border: none;
+    outline: none;
+    border-radius: 200px;
+    background-color: #1E29FF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+    margin-top: 20px;
+}
+.box-excel{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-excel form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-excel input[type="submit"]{
+    width: 50%;
+    height: 15%;
+    border: none;
+    outline: none;
+    border-radius: 200px;
+    background-color: #1E29FF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+    margin-top: 20px;
+}
+.box-excel input[type="file"]{
+    display: none;
+}
+#file-input-label{
+    width: 20%;
+    height: 10%;
+    background-color: rgb(41, 100, 29);
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+}
+.right-box{
+    background-color: #3C56FF;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.box-notifi-title{
+    width: 100%;
+    height: 16%;
+    font-family: poppins, sans-serif;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.notifi-geral{
+    width: 10%;
+    height: 10%;
+    border-radius: 100px;
+    background-color: white;
+}
+.notifi-line{
+    width: 85%;
+    height: 2%;
+    background-color: white;
+    position: relative;
+    bottom: 9.5px;
+}
+#geral-not{
+    margin-left: 5px;
+    font-weight: 500;
+}
+.box-mensagem{
+    width: 85%;
+    height: 12%;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+.text-msg{
+    width: 100%;
+    height: 50%;
+}
+.left-msg{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 5px;
+}
+.left-msg img{
+    height: 38%;
+    width: 55%;
+}
+.left-msg p{
+    font-family: poppins, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+.text-msg{
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 500;
+}
