@@ -1,23 +1,31 @@
 <?php 
-    session_start();
-    if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['senha'])){
-        include('../../controller/conn.php');
-        $email = isset($_POST['email']) ? $_POST['email'] : false;
-        $senha = isset($_POST['senha']) ? $_POST['senha'] : false;
+session_start();
 
-        $sql = "select * from clube_admin where email = '$email' and senha = '$senha'";
-        $query = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($query) < 1){
-            unset($_SESSION['email']);
-            unset($_SESSION['senha']);
-            header("Location: form.php");
-        }else{
-            $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
-            header('Location: main.php');
-        }
-    }else{
-        header("Location: form.php");
+if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
+    include('../conn.php');
+
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $sql = "SELECT * FROM clube_admin WHERE email = ? AND senha = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $email, $senha);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows < 1) {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header("Location: form.php?error=invalid");
+        exit;
+    } else {
+        $_SESSION['email'] = $email;
+        $_SESSION['senha'] = $senha;
+        header("Location: main.php");
+        exit;
     }
-
+} else {
+    header("Location: form.php?error=empty");
+    exit;
+}
 ?>

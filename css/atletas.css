@@ -14,6 +14,10 @@ body{
     align-items: center;
     flex-direction: row;
 }
+#exit{
+    margin-top: 620px;
+}
+
 .left-box{
     background-color: #3C56FF;
     width: 5%;
@@ -106,15 +110,15 @@ body{
 .box-add .inp-form {
     width: 50%;
     height: 8%;
-    font-size: 18px;
+    font-size: 15px;
     border: none;
-    border-bottom: 4px solid #CFCFCF;
+    border-bottom: 4px solid #e0dfdf;
     outline: none;
-    font-weight: bold;
+    font-weight: 500;
     font-family: poppins, sans-serif;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    margin-top: 12px;
     background-color: white; /* Garantir fundo branco nos campos de input */
-    margin-top: 10px;
 }
 .box-add form{
     width: 100%;
@@ -255,4 +259,37 @@ body{
     width: 100%;
     margin-top: 10px;
     font-weight: 500;
+}
+.left-box-painel button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horarios-view a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#texto{
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-box{
+    background-color: #3C56FF;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+body{
+    background-color: #3C56FF;
 }

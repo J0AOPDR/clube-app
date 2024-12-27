@@ -39,6 +39,9 @@ body {
     z-index: 1;
     padding-bottom:15%; /* Fica acima do fundo azul */
 }
+#exit{
+    margin-top: 620px;
+}
 
 .right-box .form-box {
     display: flex;
@@ -120,4 +123,11 @@ body {
     font-size: 20px;
     font-weight: bold;
     font-family: poppins, sans-serif;
+}
+.left-box-painel button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
